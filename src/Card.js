@@ -2,9 +2,16 @@ import React from 'react';
 import './Card.css';
 
 export default function Card(props) {
+  const newId = ""
+ const handleClick = (props) =>{
+    this.state.id.filter(card => card !== props)
+      this.setState({
+        id:newId
+      })
+  }
   return (
     <div className='Card'>
-      <button
+      <button onClick={() => {handleClick()}}
         type='button'
       >
         delete
